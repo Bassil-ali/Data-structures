@@ -34,8 +34,8 @@ def quickSort(array,first,last):
 array = [2,7,3,4,6,9,1]
 first = 0
 last  = len(array) -1
-
 quickSort(array, first, last)
 
+#print array after sorted
 print(array)
 
