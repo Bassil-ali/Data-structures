@@ -12,28 +12,28 @@ class LinkedList:
         self.head = None
 
     def deleteNode(self,key):
-        node = self.head
+        temp = self.head
        
         #search key in list
-        while(node is not None):
-            if node.item == key:
+        while(temp is not None):
+            if temp.item == key:
                 break
             #set item to prev if exist
-            prev = node
-            #get the second element to node
-            node = node.next
-            if(node == None):
+            prev = temp
+            #get the second element to temp
+            temp = temp.next
+            if(temp == None):
                 return
-            #set second item to node this is delete change next value
-            prev.next = node.next
-            #delete node content
-            node = None
+            #set second item to temp this is delete change next value
+            prev.next = temp.next
+            #delete temp content
+            temp = None
         
     def print(self):
-        node = self.head
-        while(node):
-          print(node.item)
-          node = node.next
+        temp = self.head
+        while(temp):
+          print(temp.item)
+          temp = temp.next
 
 
 
