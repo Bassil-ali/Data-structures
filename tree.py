@@ -6,7 +6,6 @@ class Node:
 
 
 def sumTree(ele):
-    sum = 0
     if(ele == None):
         return 0
     return (ele.item + sumTree(ele.left) + sumTree(ele.right))
