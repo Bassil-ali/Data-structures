@@ -20,7 +20,6 @@ def push(stack, item):
 def pop(stack):
     if (checkEmpty(stack)):
         return "stack is empty"
-
     return stack.pop()
 
 
@@ -32,4 +31,5 @@ push(stack, str(4))
 print("stack after popping an element: " + str(stack))
 
 print("popped item: " + pop(stack))
+print("after popping an element " + str(stack))
 
